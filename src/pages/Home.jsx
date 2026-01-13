@@ -314,47 +314,79 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Products Grid - ASIMMETRICO con overlay */}
-          <div className="relative min-h-[600px] md:min-h-[700px]">
+          {/* Products Grid - Pulito su mobile, asimmetrico su desktop */}
 
-            {/* Carni Bovine - Grande, base a sinistra */}
-            <div className="absolute top-0 left-0 w-[55%] md:w-[45%] h-[60%] group overflow-hidden z-10">
-              <img src={bisteccaImg} alt="Carni Bovine" title="Carni bovine fresche - Macelleria Clerici" loading="lazy" width={600} height={500} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/90 via-transparent to-transparent"></div>
-              <div className="absolute bottom-0 left-0 right-0 p-5 md:p-8">
-                <h3 className="font-serif text-xl md:text-3xl mb-1">Carni Bovine</h3>
-                <p className="text-[#f9f5f0]/50 text-sm hidden md:block">Tagli pregiati selezionati</p>
-              </div>
-            </div>
-
-            {/* Salumi - Sovrapposta in alto a destra */}
-            <div className="absolute top-[5%] right-0 w-[50%] md:w-[40%] h-[45%] group overflow-hidden z-20">
-              <img src={salumiImg} alt="Salumi" title="Salumi artigianali - Macelleria Clerici" loading="lazy" width={500} height={400} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/90 via-transparent to-transparent"></div>
-              <div className="absolute bottom-0 left-0 right-0 p-4 md:p-5">
-                <h3 className="font-serif text-lg md:text-xl">Salumi Artigianali</h3>
-              </div>
-            </div>
-
-            {/* Arrosti - Sovrapposta al centro */}
-            <div className="absolute top-[35%] left-[30%] w-[45%] md:w-[35%] h-[40%] group overflow-hidden z-30 shadow-2xl">
-              <img src={spiediImg} alt="Arrosti" title="Arrosti allo spiedo - Macelleria Clerici" loading="lazy" width={450} height={350} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/90 via-transparent to-transparent"></div>
+          {/* Mobile: griglia 2x2 pulita */}
+          <div className="grid grid-cols-2 gap-3 md:hidden">
+            <div className="group overflow-hidden relative aspect-[4/5]">
+              <img src={bisteccaImg} alt="Carni Bovine" title="Carni bovine fresche - Macelleria Clerici" loading="lazy" width={400} height={500} className="w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/80 to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-4">
-                <h3 className="font-serif text-lg md:text-xl">Arrosti Spiedo</h3>
+                <h3 className="font-serif text-lg">Carni Bovine</h3>
+              </div>
+            </div>
+            <div className="group overflow-hidden relative aspect-[4/5]">
+              <img src={salumiImg} alt="Salumi" title="Salumi artigianali - Macelleria Clerici" loading="lazy" width={400} height={500} className="w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/80 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-4">
+                <h3 className="font-serif text-lg">Salumi</h3>
+              </div>
+            </div>
+            <div className="group overflow-hidden relative aspect-[4/5]">
+              <img src={spiediImg} alt="Arrosti" title="Arrosti allo spiedo - Macelleria Clerici" loading="lazy" width={400} height={500} className="w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/80 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-4">
+                <h3 className="font-serif text-lg">Arrosti</h3>
+              </div>
+            </div>
+            <div className="group overflow-hidden relative aspect-[4/5]">
+              <img src={cestoImg} alt="Cesti Regalo" title="Cesti regalo natalizi - Macelleria Clerici" loading="lazy" width={400} height={500} className="w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/80 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-4">
+                <h3 className="font-serif text-lg">Cesti Regalo</h3>
+              </div>
+            </div>
+          </div>
+
+          {/* Desktop: griglia pulita con leggera asimmetria */}
+          <div className="hidden md:grid md:grid-cols-12 gap-4 lg:gap-6">
+            {/* Carni Bovine - Grande a sinistra */}
+            <div className="col-span-7 group overflow-hidden relative">
+              <img src={bisteccaImg} alt="Carni Bovine" title="Carni bovine fresche - Macelleria Clerici" loading="lazy" width={800} height={600} className="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/80 via-transparent to-transparent"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
+                <h3 className="font-serif text-2xl lg:text-3xl mb-1">Carni Bovine</h3>
+                <p className="text-[#f9f5f0]/50 text-sm">Tagli pregiati selezionati</p>
               </div>
             </div>
 
-            {/* Cesti - In basso a destra, sovrapposta */}
-            <div className="absolute bottom-0 right-[5%] w-[55%] md:w-[45%] h-[45%] group overflow-hidden z-20">
-              <img src={cestoImg} alt="Cesti Regalo" title="Cesti regalo natalizi - Macelleria Clerici" loading="lazy" width={600} height={450} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/90 via-transparent to-transparent"></div>
-              <div className="absolute bottom-0 left-0 right-0 p-5 md:p-6">
-                <h3 className="font-serif text-xl md:text-2xl mb-1">Cesti Regalo</h3>
-                <p className="text-[#f9f5f0]/50 text-sm hidden md:block">Per ogni occasione</p>
+            {/* Salumi - A destra, più piccolo */}
+            <div className="col-span-5 group overflow-hidden relative">
+              <img src={salumiImg} alt="Salumi" title="Salumi artigianali - Macelleria Clerici" loading="lazy" width={600} height={450} className="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/80 via-transparent to-transparent"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-5 lg:p-6">
+                <h3 className="font-serif text-xl lg:text-2xl">Salumi Artigianali</h3>
               </div>
             </div>
 
+            {/* Arrosti - Sotto a sinistra, più piccolo */}
+            <div className="col-span-5 group overflow-hidden relative">
+              <img src={spiediImg} alt="Arrosti" title="Arrosti allo spiedo - Macelleria Clerici" loading="lazy" width={600} height={450} className="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/80 via-transparent to-transparent"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-5 lg:p-6">
+                <h3 className="font-serif text-xl lg:text-2xl">Arrosti Spiedo</h3>
+              </div>
+            </div>
+
+            {/* Cesti - Grande a destra */}
+            <div className="col-span-7 group overflow-hidden relative">
+              <img src={cestoImg} alt="Cesti Regalo" title="Cesti regalo natalizi - Macelleria Clerici" loading="lazy" width={800} height={600} className="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/80 via-transparent to-transparent"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
+                <h3 className="font-serif text-2xl lg:text-3xl mb-1">Cesti Regalo</h3>
+                <p className="text-[#f9f5f0]/50 text-sm">Per ogni occasione</p>
+              </div>
+            </div>
           </div>
 
           {/* CTA - right aligned */}

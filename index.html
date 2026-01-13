@@ -7,7 +7,7 @@
 
     <!-- SEO Meta Tags -->
     <title>Macelleria Clerici | Carni Fresche di Qualità a Pisogne dal 1989</title>
-    <meta name="description" content="Macelleria Clerici a Pisogne (BS) - Dal 1989 selezioniamo le migliori carni fresche con passione artigianale. Carni bovine, suine, pollame e preparati. Vieni a trovarci!" />
+    <meta name="description" content="Macelleria Clerici a Pisogne - Dal 1989 carni fresche selezionate, salumi artigianali e arrosti. Vieni a trovarci!" />
     <meta name="keywords" content="macelleria Pisogne, macelleria Gratacasolo, macelleria Lago d'Iseo, carni fresche Brescia, macelleria artigianale, Clerici" />
     <meta name="author" content="Macelleria Clerici" />
     <meta name="robots" content="index, follow" />
@@ -20,11 +20,16 @@
     <meta property="og:url" content="https://macelleria-clerici.it" />
     <meta property="og:site_name" content="Macelleria Clerici" />
     <meta property="og:locale" content="it_IT" />
+    <meta property="og:image" content="https://macelleria-clerici.it/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Macelleria Clerici - Carni fresche di qualità a Pisogne dal 1989" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Macelleria Clerici | Carni Fresche di Qualità a Pisogne" />
     <meta name="twitter:description" content="Dal 1989 selezioniamo le migliori carni fresche con passione artigianale." />
+    <meta name="twitter:image" content="https://macelleria-clerici.it/og-image.jpg" />
 
     <!-- Geo Tags per SEO Locale -->
     <meta name="geo.region" content="IT-BS" />
@@ -36,6 +41,107 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- JSON-LD Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Butcher",
+      "name": "Macelleria Clerici",
+      "legalName": "Clerici Attilio & C. S.N.C.",
+      "description": "Macelleria artigianale a Pisogne dal 1989. Carni fresche selezionate, salumi artigianali e arrosti allo spiedo.",
+      "url": "https://macelleria-clerici.it",
+      "telephone": "+39 0364 89008",
+      "email": "clericiattiliosnc@legalmail.it",
+      "foundingDate": "1989",
+      "image": "https://macelleria-clerici.it/og-image.jpg",
+      "logo": "https://macelleria-clerici.it/favicon.svg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Via Provinciale, 27",
+        "addressLocality": "Pisogne",
+        "addressRegion": "Lombardia",
+        "postalCode": "25055",
+        "addressCountry": "IT"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 45.8078,
+        "longitude": 10.1078
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "12:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "15:30",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "12:30"
+        }
+      ],
+      "priceRange": "€€",
+      "currenciesAccepted": "EUR",
+      "paymentAccepted": "Cash, Credit Card",
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 45.8078,
+          "longitude": 10.1078
+        },
+        "geoRadius": "30000"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Prodotti Macelleria Clerici",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Carni Bovine",
+              "description": "Tagli pregiati di manzo e vitello selezionati"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Salumi Artigianali",
+              "description": "Salumi preparati secondo la tradizione"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Arrosti allo Spiedo",
+              "description": "Porchette e arrosti cotti lentamente"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Cesti Regalo",
+              "description": "Composizioni con prodotti del territorio"
+            }
+          }
+        ]
+      },
+      "sameAs": []
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>

@@ -196,6 +196,10 @@ export default function Qualita() {
                 <img
                   src={bisteccaImg}
                   alt="Bistecca di qualità selezionata"
+                  title="Bistecca di qualità - Macelleria Clerici"
+                  loading="lazy"
+                  width={800}
+                  height={600}
                   className="w-full aspect-[4/3] object-cover"
                 />
               </div>
@@ -314,6 +318,10 @@ export default function Qualita() {
               <img
                 src={salumiImg}
                 alt="Salumi stagionati"
+                title="Salumi artigianali stagionati - Macelleria Clerici"
+                loading="lazy"
+                width={600}
+                height={800}
                 className="w-full aspect-[3/4] object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
@@ -323,6 +331,10 @@ export default function Qualita() {
               <img
                 src={spiediImg}
                 alt="Arrosti allo spiedo"
+                title="Arrosti allo spiedo - Macelleria Clerici"
+                loading="lazy"
+                width={600}
+                height={600}
                 className="w-full aspect-square object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
@@ -332,6 +344,10 @@ export default function Qualita() {
               <img
                 src={cestiRegaloImg}
                 alt="Cesti regalo"
+                title="Cesti regalo - Macelleria Clerici"
+                loading="lazy"
+                width={400}
+                height={500}
                 className="w-full aspect-[4/5] object-cover hover:scale-105 transition-transform duration-500"
               />
               {/* Floating text */}
@@ -350,6 +366,10 @@ export default function Qualita() {
           <img
             src={bisteccaImg}
             alt="La nostra filosofia"
+            title="Filosofia di qualità - Macelleria Clerici"
+            loading="lazy"
+            width={800}
+            height={1000}
             className="w-full h-64 lg:h-full object-cover"
           />
           <div className="absolute inset-0 bg-[#7f1d1d]/20"></div>

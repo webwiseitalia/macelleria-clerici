@@ -263,6 +263,10 @@ export default function Contatti() {
           <img
             src={cestiRegaloImg}
             alt="I nostri prodotti"
+            title="Prodotti Macelleria Clerici Pisogne"
+            loading="lazy"
+            width={800}
+            height={1000}
             className="w-full h-64 lg:h-full object-cover"
           />
           <div className="absolute inset-0 bg-[#2e2e2e]/30"></div>
@@ -401,6 +405,10 @@ export default function Contatti() {
           <img
             src={spiediImg}
             alt="I nostri arrosti allo spiedo"
+            title="Arrosti allo spiedo - Macelleria Clerici"
+            loading="lazy"
+            width={1000}
+            height={800}
             className="w-full h-64 lg:h-full object-cover"
           />
           <div className="absolute inset-0 bg-[#7f1d1d]/10"></div>

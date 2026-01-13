@@ -102,22 +102,22 @@ export default function Prodotti() {
         {/* Product images in background - corners */}
         <div className="absolute inset-0 hidden lg:block">
           <div className="hero-grid-img absolute top-0 left-0 w-1/4 h-1/2 overflow-hidden">
-            <img src={bisteccaImg} alt="Carni bovine" className="w-full h-full object-cover opacity-40" />
+            <img src={bisteccaImg} alt="Carni bovine" title="Carni bovine fresche - Macelleria Clerici" loading="eager" width={400} height={500} className="w-full h-full object-cover opacity-40" />
             <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#1a1a1a]"></div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#1a1a1a]"></div>
           </div>
           <div className="hero-grid-img absolute top-0 right-0 w-1/4 h-1/2 overflow-hidden">
-            <img src={salumiImg} alt="Salumi artigianali" className="w-full h-full object-cover opacity-40" />
+            <img src={salumiImg} alt="Salumi artigianali" title="Salumi artigianali - Macelleria Clerici" loading="eager" width={400} height={500} className="w-full h-full object-cover opacity-40" />
             <div className="absolute inset-0 bg-gradient-to-l from-transparent to-[#1a1a1a]"></div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#1a1a1a]"></div>
           </div>
           <div className="hero-grid-img absolute bottom-0 left-0 w-1/4 h-1/2 overflow-hidden">
-            <img src={spiediImg} alt="Arrosti e spiedi" className="w-full h-full object-cover opacity-40" />
+            <img src={spiediImg} alt="Arrosti e spiedi" title="Arrosti allo spiedo - Macelleria Clerici" loading="eager" width={400} height={500} className="w-full h-full object-cover opacity-40" />
             <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#1a1a1a]"></div>
             <div className="absolute inset-0 bg-gradient-to-t from-transparent to-[#1a1a1a]"></div>
           </div>
           <div className="hero-grid-img absolute bottom-0 right-0 w-1/4 h-1/2 overflow-hidden">
-            <img src={cestoImg} alt="Cesti regalo" className="w-full h-full object-cover opacity-40" />
+            <img src={cestoImg} alt="Cesti regalo" title="Cesti regalo natalizi - Macelleria Clerici" loading="eager" width={400} height={500} className="w-full h-full object-cover opacity-40" />
             <div className="absolute inset-0 bg-gradient-to-l from-transparent to-[#1a1a1a]"></div>
             <div className="absolute inset-0 bg-gradient-to-t from-transparent to-[#1a1a1a]"></div>
           </div>
@@ -252,6 +252,10 @@ export default function Prodotti() {
                   <img
                     src={category.image}
                     alt={category.title}
+                    title={`${category.title} - Macelleria Clerici`}
+                    loading="lazy"
+                    width={800}
+                    height={600}
                     className="w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
@@ -297,6 +301,10 @@ export default function Prodotti() {
               <img
                 src={salseImg}
                 alt="Salse e sughi"
+                title="Salse e sughi artigianali - Macelleria Clerici"
+                loading="lazy"
+                width={600}
+                height={800}
                 className="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/80 via-transparent to-transparent"></div>
@@ -311,6 +319,10 @@ export default function Prodotti() {
               <img
                 src={chutneyImg}
                 alt="Confetture e chutney"
+                title="Confetture e chutney - Macelleria Clerici"
+                loading="lazy"
+                width={600}
+                height={600}
                 className="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/80 via-transparent to-transparent"></div>
@@ -325,6 +337,10 @@ export default function Prodotti() {
               <img
                 src={cestoCompletoImg}
                 alt="Prodotti tipici"
+                title="Prodotti tipici del territorio - Macelleria Clerici"
+                loading="lazy"
+                width={400}
+                height={500}
                 className="w-full aspect-[4/5] object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/80 via-transparent to-transparent"></div>
@@ -343,6 +359,10 @@ export default function Prodotti() {
           <img
             src={bisteccaImg}
             alt="Tagli personalizzati"
+            title="Tagli di carne su misura - Macelleria Clerici"
+            loading="lazy"
+            width={800}
+            height={1000}
             className="w-full h-64 lg:h-full object-cover"
           />
           <div className="absolute inset-0 bg-[#7f1d1d]/10"></div>

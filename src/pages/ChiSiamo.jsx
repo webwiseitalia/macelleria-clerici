@@ -107,11 +107,11 @@ export default function ChiSiamo() {
 
         {/* Corner images */}
         <div className="absolute bottom-0 left-0 w-1/3 max-w-xs hidden lg:block" data-animate="image">
-          <img src={salumiNataleImg} alt="" className="w-full aspect-[3/4] object-cover" />
+          <img src={salumiNataleImg} alt="Salumi natalizi Macelleria Clerici" title="Prodotti natalizi - Macelleria Clerici" loading="eager" width={400} height={533} className="w-full aspect-[3/4] object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#f9f5f0] to-transparent"></div>
         </div>
         <div className="absolute top-20 right-0 w-1/4 max-w-[200px] hidden lg:block" data-animate="image">
-          <img src={cestiRegaloImg} alt="" className="w-full aspect-square object-cover" />
+          <img src={cestiRegaloImg} alt="Cesti regalo Macelleria Clerici" title="Cesti regalo - Macelleria Clerici" loading="eager" width={200} height={200} className="w-full aspect-square object-cover" />
         </div>
       </section>
 
@@ -132,6 +132,10 @@ export default function ChiSiamo() {
                 <img
                   src={salumiNataleImg}
                   alt="I nostri salumi artigianali"
+                  title="Salumi artigianali - Macelleria Clerici Pisogne"
+                  loading="lazy"
+                  width={800}
+                  height={1000}
                   className="w-full aspect-[4/5] object-cover"
                 />
               </div>
@@ -207,6 +211,10 @@ export default function ChiSiamo() {
               <img
                 src={cestoCompletoImg}
                 alt="Cesto regalo con prodotti tipici"
+                title="Cesto regalo prodotti tipici - Macelleria Clerici"
+                loading="lazy"
+                width={600}
+                height={800}
                 className="w-full aspect-[3/4] object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
@@ -216,6 +224,10 @@ export default function ChiSiamo() {
               <img
                 src={spiediImg}
                 alt="Arrosti allo spiedo"
+                title="Arrosti allo spiedo - Macelleria Clerici"
+                loading="lazy"
+                width={600}
+                height={600}
                 className="w-full aspect-square object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
@@ -225,6 +237,10 @@ export default function ChiSiamo() {
               <img
                 src={cestiRegaloImg}
                 alt="Selezione di cesti regalo"
+                title="Selezione cesti regalo - Macelleria Clerici"
+                loading="lazy"
+                width={400}
+                height={500}
                 className="w-full aspect-[4/5] object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
@@ -234,6 +250,10 @@ export default function ChiSiamo() {
               <img
                 src={salumiNataleImg}
                 alt="I nostri prodotti natalizi"
+                title="Prodotti natalizi - Macelleria Clerici"
+                loading="lazy"
+                width={1000}
+                height={563}
                 className="w-full aspect-[16/9] object-cover hover:scale-105 transition-transform duration-500"
               />
               {/* Floating text */}
@@ -339,6 +359,10 @@ export default function ChiSiamo() {
           <img
             src={spiediImg}
             alt="Lavorazione artigianale"
+            title="Lavorazione artigianale - Macelleria Clerici"
+            loading="lazy"
+            width={800}
+            height={1000}
             className="w-full h-64 lg:h-full object-cover"
           />
           <div className="absolute inset-0 bg-[#7f1d1d]/10"></div>

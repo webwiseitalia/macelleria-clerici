@@ -91,8 +91,8 @@ export default function Footer() {
             <p>© {currentYear} Clerici Attilio & C. S.N.C.</p>
           </div>
           <div className="flex gap-6 text-xs uppercase tracking-wider text-[#f9f5f0]/30">
-            <Link to="/privacy" className="hover:text-[#f9f5f0] transition-colors">Privacy</Link>
-            <Link to="/cookie" className="hover:text-[#f9f5f0] transition-colors">Cookie</Link>
+            <Link to="/privacy-policy" className="hover:text-[#f9f5f0] transition-colors">Privacy Policy</Link>
+            <Link to="/cookie-policy" className="hover:text-[#f9f5f0] transition-colors">Cookie Policy</Link>
           </div>
         </div>
       </div>

@@ -178,6 +178,10 @@ export default function Home() {
                 <img
                   src={bisteccaImg}
                   alt="Carni fresche di qualità - Macelleria Clerici"
+                  title="Carni fresche selezionate - Macelleria Clerici Pisogne"
+                  loading="eager"
+                  width={1200}
+                  height={800}
                   className="w-full h-full object-cover"
                 />
                 {/* Overlay gradient */}
@@ -270,6 +274,10 @@ export default function Home() {
                 <img
                   src={salumiImg}
                   alt="I nostri salumi artigianali"
+                  title="Salumi artigianali - Macelleria Clerici"
+                  loading="lazy"
+                  width={800}
+                  height={600}
                   className="w-full aspect-[4/3] object-cover"
                 />
               </div>
@@ -311,7 +319,7 @@ export default function Home() {
 
             {/* Carni Bovine - Grande, base a sinistra */}
             <div className="absolute top-0 left-0 w-[55%] md:w-[45%] h-[60%] group overflow-hidden z-10">
-              <img src={bisteccaImg} alt="Carni Bovine" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <img src={bisteccaImg} alt="Carni Bovine" title="Carni bovine fresche - Macelleria Clerici" loading="lazy" width={600} height={500} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/90 via-transparent to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-5 md:p-8">
                 <h3 className="font-serif text-xl md:text-3xl mb-1">Carni Bovine</h3>
@@ -321,7 +329,7 @@ export default function Home() {
 
             {/* Salumi - Sovrapposta in alto a destra */}
             <div className="absolute top-[5%] right-0 w-[50%] md:w-[40%] h-[45%] group overflow-hidden z-20">
-              <img src={salumiImg} alt="Salumi" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <img src={salumiImg} alt="Salumi" title="Salumi artigianali - Macelleria Clerici" loading="lazy" width={500} height={400} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/90 via-transparent to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-4 md:p-5">
                 <h3 className="font-serif text-lg md:text-xl">Salumi Artigianali</h3>
@@ -330,7 +338,7 @@ export default function Home() {
 
             {/* Arrosti - Sovrapposta al centro */}
             <div className="absolute top-[35%] left-[30%] w-[45%] md:w-[35%] h-[40%] group overflow-hidden z-30 shadow-2xl">
-              <img src={spiediImg} alt="Arrosti" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <img src={spiediImg} alt="Arrosti" title="Arrosti allo spiedo - Macelleria Clerici" loading="lazy" width={450} height={350} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/90 via-transparent to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-4">
                 <h3 className="font-serif text-lg md:text-xl">Arrosti Spiedo</h3>
@@ -339,7 +347,7 @@ export default function Home() {
 
             {/* Cesti - In basso a destra, sovrapposta */}
             <div className="absolute bottom-0 right-[5%] w-[55%] md:w-[45%] h-[45%] group overflow-hidden z-20">
-              <img src={cestoImg} alt="Cesti Regalo" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <img src={cestoImg} alt="Cesti Regalo" title="Cesti regalo natalizi - Macelleria Clerici" loading="lazy" width={600} height={450} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/90 via-transparent to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-5 md:p-6">
                 <h3 className="font-serif text-xl md:text-2xl mb-1">Cesti Regalo</h3>
@@ -436,6 +444,10 @@ export default function Home() {
           <img
             src={cestiRegaloImg}
             alt="I nostri prodotti"
+            title="Prodotti di qualità - Macelleria Clerici"
+            loading="lazy"
+            width={800}
+            height={1000}
             className="w-full h-64 lg:h-full object-cover"
           />
           <div className="absolute inset-0 bg-[#7f1d1d]/20"></div>

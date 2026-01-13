@@ -1,0 +1,12 @@
+# Robots.txt per Macelleria Clerici
+# https://macelleria-clerici.it
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://macelleria-clerici.it/sitemap.xml
+
+# Blocca cartelle di sistema
+Disallow: /src/
+Disallow: /node_modules/

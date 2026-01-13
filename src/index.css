@@ -1,3 +1,194 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-rosso: #7f1d1d;
+  --color-rosso-dark: #5c1515;
+  --color-rosso-light: #b91c1c;
+  --color-beige: #f9f5f0;
+  --color-beige-dark: #e8d9c5;
+  --color-grigio: #2e2e2e;
+  --color-grigio-light: #6a6a6a;
+
+  --space-xs: clamp(0.5rem, 1vw, 0.75rem);
+  --space-sm: clamp(0.75rem, 2vw, 1.25rem);
+  --space-md: clamp(1.5rem, 4vw, 3rem);
+  --space-lg: clamp(3rem, 8vw, 6rem);
+  --space-xl: clamp(5rem, 12vw, 10rem);
+  --space-2xl: clamp(8rem, 18vw, 16rem);
+
+  --text-xs: clamp(0.75rem, 1vw, 0.875rem);
+  --text-sm: clamp(0.875rem, 1.2vw, 1rem);
+  --text-base: clamp(1rem, 1.5vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 2vw, 1.5rem);
+  --text-xl: clamp(1.5rem, 3vw, 2.25rem);
+  --text-2xl: clamp(2rem, 4vw, 3rem);
+  --text-3xl: clamp(2.5rem, 6vw, 4.5rem);
+  --text-4xl: clamp(3.5rem, 10vw, 8rem);
+  --text-5xl: clamp(5rem, 15vw, 12rem);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto !important;
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+body {
+  font-family: 'Source Sans 3', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-beige);
+  color: var(--color-grigio);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-left: clamp(1rem, 5vw, 4rem);
+  padding-right: clamp(2rem, 8vw, 8rem);
+}
+
+.container-fluid-reverse {
+  width: 100%;
+  padding-left: clamp(2rem, 8vw, 8rem);
+  padding-right: clamp(1rem, 5vw, 4rem);
+}
+
+.char {
+  display: inline-block;
+  transform-origin: bottom;
+}
+
+.word {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.line {
+  overflow: hidden;
+}
+
+.img-brutal {
+  clip-path: polygon(0 4%, 97% 0, 100% 96%, 3% 100%);
+}
+
+.img-slant {
+  clip-path: polygon(8% 0, 100% 5%, 92% 100%, 0 95%);
+}
+
+.img-torn {
+  clip-path: polygon(2% 0, 98% 3%, 100% 97%, 0 100%);
+}
+
+.grain::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-beige);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-rosso);
+  border-radius: 0;
+}
+
+::selection {
+  background: var(--color-rosso);
+  color: var(--color-beige);
+}
+
+.link-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.link-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+[data-split] .char,
+[data-split] .word,
+[data-split] .line {
+  will-change: transform, opacity;
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  }
+}
+
+.no-transition,
+.no-transition * {
+  transition: none !important;
+}
